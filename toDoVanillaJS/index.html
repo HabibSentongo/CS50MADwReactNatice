@@ -9,17 +9,29 @@
     </head>
     <body>
         <div>
-            <h1>ToDo List</h1>
+            <h1>ToDo Lists</h1>
         </div>
         <div>
             <ul id="todo">
-                <li>Be your own Hero!</li>
-            </ul>
-            <ul>
-                <li>
+                <li class="taskList" onclick="showTasks()">
+                    Be your own Hero!
+                    <div class="tasksdiv" id="insideTodo">
+                        <ul id="tasks">
+                            <li class="createForm">
+                                <form onsubmit="taskAdd(); return false">
+                                    <div>
+                                        <input type="text" placeholder="New task to be done ..." id="newTask" required>
+                                        <input type="submit" value="Save">
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="createForm">
                     <form onsubmit="todoAdd(); return false">
                         <div>
-                            <input type="text" placeholder="New task to be done ..." id="newText" required>
+                            <input type="text" placeholder="New todo list ..." id="newTodo" required>
                             <input type="submit" value="Save">
                         </div>
                     </form>

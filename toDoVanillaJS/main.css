@@ -2,3 +2,29 @@ body{
     background-color: lightgray;
     padding-left: 40%;
 }
+.createForm{
+    margin-top: 2%;
+}
+.taskList {
+    cursor: pointer;
+  }
+.taskList .tasksdiv{
+    visibility: hidden;
+}
+/* Toggle this class when clicking on the todo list (hide and show the taskList) */
+.taskList .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
