@@ -13,26 +13,29 @@
         </div>
         <div>
             <ul id="todo">
-                <li class="taskList" onclick="showTasks()">
-                    Be your own Hero!
+                <li class="taskList">
+                    <span class="clickable" onclick="showTasks('insideTodo')">Be your own Hero!</span>
+                    
                     <div class="tasksdiv" id="insideTodo">
                         <ul id="tasks">
+                        </ul>
+                        <ul>
                             <li class="createForm">
-                                <form onsubmit="taskAdd(); return false">
+                                <form onsubmit="taskAdd('newTask', 'tasks'); return false">
                                     <div>
                                         <input type="text" placeholder="New task to be done ..." id="newTask" required>
-                                        <input type="submit" value="Save">
                                     </div>
                                 </form>
                             </li>
                         </ul>
                     </div>
                 </li>
+            </ul>
+            <ul>
                 <li class="createForm">
                     <form onsubmit="todoAdd(); return false">
                         <div>
                             <input type="text" placeholder="New todo list ..." id="newTodo" required>
-                            <input type="submit" value="Save">
                         </div>
                     </form>
                 </li>

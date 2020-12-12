@@ -5,14 +5,20 @@ body{
 .createForm{
     margin-top: 2%;
 }
+.clickable{
+  color: blue;
+}
 .taskList {
+    position: relative;
     cursor: pointer;
   }
 .taskList .tasksdiv{
+
     visibility: hidden;
 }
 /* Toggle this class when clicking on the todo list (hide and show the taskList) */
 .taskList .show {
+    /* max-height: min-content; */
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s
